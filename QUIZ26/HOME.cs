@@ -12,6 +12,7 @@ namespace QUIZ26
 {
     public partial class HOME : Form
     {
+        string doctor;
         public HOME()
         {
             InitializeComponent();
@@ -44,9 +45,9 @@ namespace QUIZ26
 
         private void btnfecha_Click(object sender, EventArgs e)
         {
-            DateTime date = calendario.SelectionStart;
-
-
+            lblfecha.Text = calendario.SelectionStart.Day.ToString() + "/" +
+                calendario.SelectionStart.Month.ToString() + "/" +
+                calendario.SelectionStart.Year.ToString();
         }
 
         private void btnsiguiente_Click(object sender, EventArgs e)
@@ -72,11 +73,37 @@ namespace QUIZ26
             lbl9.Text = (String)comboBox1.Items[comboBox1.SelectedIndex];
         }
 
+
+
+        private void rdio1_CheckedChanged(object sender, EventArgs e)
+        {
+            doctor = "luis Payares";
+            lbl10.Text = doctor;
+        }
+
+        private void rdio2_CheckedChanged(object sender, EventArgs e)
+        {
+            doctor = "Fabian Duran";
+            lbl10.Text = doctor;
+        }
+
+        private void rdio3_CheckedChanged(object sender, EventArgs e)
+        {
+            doctor = "Pedro Guzman";
+            lbl10.Text = doctor;
+        }
         private void save_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text += txtb1.Text + " indentificado con el numero de " + comboBox1.Text + ": " + txtb2.Text + " se le informa que su cita ha sido asignada para la fecha " + D;
+            richTextBox1.Text += txtb1.Text + " indentificado con el numero de " + comboBox1.Text + ": "
+                + txtb2.Text + " se le informa que su cita ha sido asignada para la fecha " + lblfecha.Text +
+                " con el doctor " + lbl10.Text + ", porfavor estar atento a su correo: " + txtb3.Text + 
+                ". Su metodo de pago seleccionado fue: " + lbl6.Text + "\n";
 
 
-        }        
+
+
+
+
+        }
     }
 }
