@@ -71,5 +71,12 @@ namespace QUIZ26
         {
             lbl9.Text = (String)comboBox1.Items[comboBox1.SelectedIndex];
         }
+
+        private void save_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text += txtb1.Text + " indentificado con el numero de " + comboBox1.Text + ": " + txtb2.Text + " se le informa que su cita ha sido asignada para la fecha " + D;
+
+
+        }        
     }
 }
