@@ -1,7 +1,7 @@
 ﻿
 namespace QUIZ26
 {
-    partial class QUIZ
+    partial class Report
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,7 @@ namespace QUIZ26
         private void InitializeComponent()
         {
             this.btnenviar = new System.Windows.Forms.Button();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // btnenviar
@@ -40,16 +41,25 @@ namespace QUIZ26
             this.btnenviar.TabIndex = 0;
             this.btnenviar.Text = "Enviar";
             this.btnenviar.UseVisualStyleBackColor = true;
-            this.btnenviar.Click += new System.EventHandler(this.btnenviar_Click);
             // 
-            // QUIZ
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(115, 90);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(584, 179);
+            this.richTextBox2.TabIndex = 3;
+            this.richTextBox2.Text = "";
+            this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
+            // 
+            // Report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.btnenviar);
-            this.Name = "QUIZ";
-            this.Text = "QUIZ";
+            this.Name = "Report";
+            this.Text = "Report";
             this.ResumeLayout(false);
 
         }
@@ -57,5 +67,6 @@ namespace QUIZ26
         #endregion
 
         private System.Windows.Forms.Button btnenviar;
+        public System.Windows.Forms.RichTextBox richTextBox2;
     }
 }

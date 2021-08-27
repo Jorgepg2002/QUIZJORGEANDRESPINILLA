@@ -79,24 +79,22 @@ namespace QUIZ26
             this.lbl1.AutoSize = true;
             this.lbl1.Location = new System.Drawing.Point(328, 56);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(141, 20);
+            this.lbl1.Size = new System.Drawing.Size(0, 20);
             this.lbl1.TabIndex = 1;
-            this.lbl1.Text = "llene la informacion";
             // 
             // lbl2
             // 
             this.lbl2.AutoSize = true;
-            this.lbl2.Location = new System.Drawing.Point(211, 430);
+            this.lbl2.Location = new System.Drawing.Point(213, 473);
             this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(97, 20);
+            this.lbl2.Size = new System.Drawing.Size(0, 20);
             this.lbl2.TabIndex = 3;
-            this.lbl2.Text = "cita apartada";
             this.lbl2.Click += new System.EventHandler(this.lbl2_Click);
             // 
             // lbl3
             // 
             this.lbl3.AutoSize = true;
-            this.lbl3.Location = new System.Drawing.Point(3, 79);
+            this.lbl3.Location = new System.Drawing.Point(0, 108);
             this.lbl3.Name = "lbl3";
             this.lbl3.Size = new System.Drawing.Size(68, 20);
             this.lbl3.TabIndex = 4;
@@ -105,7 +103,7 @@ namespace QUIZ26
             // lbl5
             // 
             this.lbl5.AutoSize = true;
-            this.lbl5.Location = new System.Drawing.Point(6, 174);
+            this.lbl5.Location = new System.Drawing.Point(3, 203);
             this.lbl5.Name = "lbl5";
             this.lbl5.Size = new System.Drawing.Size(62, 20);
             this.lbl5.TabIndex = 6;
@@ -113,14 +111,14 @@ namespace QUIZ26
             // 
             // txtb1
             // 
-            this.txtb1.Location = new System.Drawing.Point(80, 76);
+            this.txtb1.Location = new System.Drawing.Point(77, 105);
             this.txtb1.Name = "txtb1";
             this.txtb1.Size = new System.Drawing.Size(216, 27);
             this.txtb1.TabIndex = 7;
             // 
             // txtb2
             // 
-            this.txtb2.Location = new System.Drawing.Point(178, 148);
+            this.txtb2.Location = new System.Drawing.Point(175, 177);
             this.txtb2.Name = "txtb2";
             this.txtb2.Size = new System.Drawing.Size(216, 27);
             this.txtb2.TabIndex = 8;
@@ -128,7 +126,7 @@ namespace QUIZ26
             // lblfecha
             // 
             this.lblfecha.AutoSize = true;
-            this.lblfecha.Location = new System.Drawing.Point(523, 351);
+            this.lblfecha.Location = new System.Drawing.Point(521, 380);
             this.lblfecha.Name = "lblfecha";
             this.lblfecha.Size = new System.Drawing.Size(47, 20);
             this.lblfecha.TabIndex = 10;
@@ -136,13 +134,13 @@ namespace QUIZ26
             // 
             // calendario
             // 
-            this.calendario.Location = new System.Drawing.Point(508, 105);
+            this.calendario.Location = new System.Drawing.Point(506, 134);
             this.calendario.Name = "calendario";
             this.calendario.TabIndex = 11;
             // 
             // btnfecha
             // 
-            this.btnfecha.Location = new System.Drawing.Point(523, 319);
+            this.btnfecha.Location = new System.Drawing.Point(521, 348);
             this.btnfecha.Name = "btnfecha";
             this.btnfecha.Size = new System.Drawing.Size(94, 29);
             this.btnfecha.TabIndex = 12;
@@ -152,21 +150,21 @@ namespace QUIZ26
             // 
             // btnsiguiente
             // 
-            this.btnsiguiente.Location = new System.Drawing.Point(372, 693);
+            this.btnsiguiente.Location = new System.Drawing.Point(356, 693);
             this.btnsiguiente.Name = "btnsiguiente";
             this.btnsiguiente.Size = new System.Drawing.Size(94, 29);
             this.btnsiguiente.TabIndex = 13;
-            this.btnsiguiente.Text = "guardar";
+            this.btnsiguiente.Text = "report";
             this.btnsiguiente.UseVisualStyleBackColor = true;
             this.btnsiguiente.Click += new System.EventHandler(this.btnsiguiente_Click);
             // 
             // btnsave
             // 
-            this.btnsave.Location = new System.Drawing.Point(306, 398);
+            this.btnsave.Location = new System.Drawing.Point(308, 441);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(200, 29);
             this.btnsave.TabIndex = 14;
-            this.btnsave.Text = "Guardar";
+            this.btnsave.Text = "Procesar";
             this.btnsave.UseVisualStyleBackColor = true;
             this.btnsave.Click += new System.EventHandler(this.btninformacion_Click);
             // 
@@ -201,7 +199,7 @@ namespace QUIZ26
             this.lst.Items.AddRange(new object[] {
             "Virtual",
             "Efectivo"});
-            this.lst.Location = new System.Drawing.Point(6, 342);
+            this.lst.Location = new System.Drawing.Point(3, 371);
             this.lst.Name = "lst";
             this.lst.Size = new System.Drawing.Size(150, 24);
             this.lst.TabIndex = 18;
@@ -222,7 +220,7 @@ namespace QUIZ26
             // lbl6
             // 
             this.lbl6.AutoSize = true;
-            this.lbl6.Location = new System.Drawing.Point(137, 314);
+            this.lbl6.Location = new System.Drawing.Point(134, 343);
             this.lbl6.Name = "lbl6";
             this.lbl6.Size = new System.Drawing.Size(0, 20);
             this.lbl6.TabIndex = 20;
@@ -230,7 +228,7 @@ namespace QUIZ26
             // lbl7
             // 
             this.lbl7.AutoSize = true;
-            this.lbl7.Location = new System.Drawing.Point(6, 314);
+            this.lbl7.Location = new System.Drawing.Point(3, 343);
             this.lbl7.Name = "lbl7";
             this.lbl7.Size = new System.Drawing.Size(125, 20);
             this.lbl7.TabIndex = 21;
@@ -242,7 +240,7 @@ namespace QUIZ26
             this.comboBox1.Items.AddRange(new object[] {
             "Cedula",
             "T.I"});
-            this.comboBox1.Location = new System.Drawing.Point(0, 143);
+            this.comboBox1.Location = new System.Drawing.Point(-3, 172);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(107, 28);
             this.comboBox1.TabIndex = 23;
@@ -252,7 +250,7 @@ namespace QUIZ26
             // lbl9
             // 
             this.lbl9.AutoSize = true;
-            this.lbl9.Location = new System.Drawing.Point(113, 151);
+            this.lbl9.Location = new System.Drawing.Point(110, 180);
             this.lbl9.Name = "lbl9";
             this.lbl9.Size = new System.Drawing.Size(0, 20);
             this.lbl9.TabIndex = 24;
@@ -261,7 +259,7 @@ namespace QUIZ26
             // 
             this.richTextBox1.AccessibleName = "rtxresults";
             this.richTextBox1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.richTextBox1.Location = new System.Drawing.Point(1, 492);
+            this.richTextBox1.Location = new System.Drawing.Point(3, 535);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(797, 147);
             this.richTextBox1.TabIndex = 25;
@@ -284,11 +282,11 @@ namespace QUIZ26
             // 
             // save
             // 
-            this.save.Location = new System.Drawing.Point(354, 457);
+            this.save.Location = new System.Drawing.Point(356, 500);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(94, 29);
             this.save.TabIndex = 28;
-            this.save.Text = "button1";
+            this.save.Text = "Guardar";
             this.save.UseVisualStyleBackColor = true;
             this.save.Click += new System.EventHandler(this.save_Click);
             // 
@@ -297,7 +295,7 @@ namespace QUIZ26
             this.grpbox.Controls.Add(this.rdio1);
             this.grpbox.Controls.Add(this.rdio2);
             this.grpbox.Controls.Add(this.rdio3);
-            this.grpbox.Location = new System.Drawing.Point(61, 197);
+            this.grpbox.Location = new System.Drawing.Point(58, 226);
             this.grpbox.Name = "grpbox";
             this.grpbox.Size = new System.Drawing.Size(266, 114);
             this.grpbox.TabIndex = 29;
@@ -306,7 +304,7 @@ namespace QUIZ26
             // lbl10
             // 
             this.lbl10.AutoSize = true;
-            this.lbl10.Location = new System.Drawing.Point(61, 174);
+            this.lbl10.Location = new System.Drawing.Point(58, 203);
             this.lbl10.Name = "lbl10";
             this.lbl10.Size = new System.Drawing.Size(0, 20);
             this.lbl10.TabIndex = 30;
@@ -314,7 +312,7 @@ namespace QUIZ26
             // lbl11
             // 
             this.lbl11.AutoSize = true;
-            this.lbl11.Location = new System.Drawing.Point(508, 76);
+            this.lbl11.Location = new System.Drawing.Point(506, 105);
             this.lbl11.Name = "lbl11";
             this.lbl11.Size = new System.Drawing.Size(203, 20);
             this.lbl11.TabIndex = 31;
@@ -323,7 +321,7 @@ namespace QUIZ26
             // lblemail
             // 
             this.lblemail.AutoSize = true;
-            this.lblemail.Location = new System.Drawing.Point(6, 105);
+            this.lblemail.Location = new System.Drawing.Point(3, 134);
             this.lblemail.Name = "lblemail";
             this.lblemail.Size = new System.Drawing.Size(50, 20);
             this.lblemail.TabIndex = 32;
@@ -331,7 +329,7 @@ namespace QUIZ26
             // 
             // txtb3
             // 
-            this.txtb3.Location = new System.Drawing.Point(80, 109);
+            this.txtb3.Location = new System.Drawing.Point(77, 138);
             this.txtb3.Name = "txtb3";
             this.txtb3.Size = new System.Drawing.Size(216, 27);
             this.txtb3.TabIndex = 33;
@@ -368,7 +366,6 @@ namespace QUIZ26
             this.Controls.Add(this.btn);
             this.Name = "HOME";
             this.Text = "HOME";
-            this.Load += new System.EventHandler(this.HOME_Load);
             this.grpbox.ResumeLayout(false);
             this.grpbox.PerformLayout();
             this.ResumeLayout(false);

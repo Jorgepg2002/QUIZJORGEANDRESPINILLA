@@ -28,10 +28,7 @@ namespace QUIZ26
             
         }
 
-        private void HOME_Load(object sender, EventArgs e)
-        {
-            lbl1.Text = ""; lbl2.Text ="";
-        }
+        
 
         private void lbl2_Click(object sender, EventArgs e)
         {
@@ -50,11 +47,7 @@ namespace QUIZ26
                 calendario.SelectionStart.Year.ToString();
         }
 
-        private void btnsiguiente_Click(object sender, EventArgs e)
-        {
-            Form formulario = new QUIZ();
-            formulario.Show();
-        }
+        
 
         private void btninformacion_Click(object sender, EventArgs e)
         {
@@ -96,14 +89,17 @@ namespace QUIZ26
         {
             richTextBox1.Text += txtb1.Text + " indentificado con el numero de " + comboBox1.Text + ": "
                 + txtb2.Text + " se le informa que su cita ha sido asignada para la fecha " + lblfecha.Text +
-                " con el doctor " + lbl10.Text + ", porfavor estar atento a su correo: " + txtb3.Text + 
+                " con el doctor " + lbl10.Text + ", porfavor estar atento a su correo: " + txtb3.Text +
                 ". Su metodo de pago seleccionado fue: " + lbl6.Text + "\n";
 
+        }
 
-
-
-
-
+        private void btnsiguiente_Click(object sender, EventArgs e)
+        {
+            Report f = new Report();
+            f.richTextBox2.Text = richTextBox1.Text;
+            this.Hide();
+            f.ShowDialog();
         }
     }
 }

@@ -10,16 +10,15 @@ using System.Windows.Forms;
 
 namespace QUIZ26
 {
-    public partial class QUIZ : Form
+    public partial class Report : Form
     {
-        public QUIZ()
+        public Report()
         {
             InitializeComponent();
         }
 
-        private void btnenviar_Click(object sender, EventArgs e)
-        {
+        
 
-        }
+        
     }
 }
