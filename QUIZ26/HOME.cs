@@ -19,12 +19,12 @@ namespace QUIZ26
 
         private void btn_Click(object sender, EventArgs e)
         {
-            lbl1.Text = "Let`s gets started";
+            lbl1.Text = "Llene la informacion";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            lbl2.Text = "good luck " + txtb1.Text;
+            
         }
 
         private void HOME_Load(object sender, EventArgs e)
@@ -57,8 +57,19 @@ namespace QUIZ26
 
         private void btninformacion_Click(object sender, EventArgs e)
         {
-            lbl2.Text = "Good luck " + txtb1.Text;
+            lbl2.Text = "Usuario " + txtb1.Text + " su cita ha sido apartada.";
             
+        }
+
+        private void lst_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lbl6.Text = (String)lst.Items[lst.SelectedIndex];
+        
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lbl9.Text = (String)comboBox1.Items[comboBox1.SelectedIndex];
         }
     }
 }
